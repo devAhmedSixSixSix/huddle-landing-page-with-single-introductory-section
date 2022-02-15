@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #ffff;
+  line-height: 1.8;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  background-image: url(../images/bg-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
+  padding: 0 33px 0 33px;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+  }
+}
+
+.container {
+  position: relative;
+  margin-bottom: 33px;
+}
+
+.container > img {
+  width: 220px;
+}
+
+@media (max-width: 991px) {
+  .container img:first-of-type {
+    margin: 22px auto;
+  }
+}
+
+.holder {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.holder img {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .holder {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+p {
+  opacity: 0.7;
+  padding: 22px 0;
+}
+
+button {
+  color: hsl(300, 69%, 71%);
+  background-color: #fff;
+  border: none;
+  outline: none;
+  padding: 11px 55px;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+button:hover {
+  color: #fff;
+  background-color: hsl(300, 69%, 71%);
+}
+
+.icon {
+  position: absolute;
+  right: 100px;
+}
+
+@media (max-width: 991px) {
+  .icon {
+    padding: 22px 0;
+    right: calc(50% - 48px);
+  }
+}
